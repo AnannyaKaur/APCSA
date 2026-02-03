@@ -1,0 +1,29 @@
+import java.util.Random;
+
+public class Gryffindor extends Student
+{
+    public Gryffindor(String studentName)
+    {
+        super(studentName);
+    }
+
+    public String getCandy()
+    {
+        String[] candies = {"Chocoballs", "Fudge Flies", "Every Flavour Beans", "Chocolate Frogs"};
+        Random rand = new Random();
+        int index = rand.nextInt(candies.length);
+        return candies[index];
+    }
+}
+
+
+
+
+public void snack()
+{
+    for (int i = 0; i < magicalList.length; i++)
+    {
+        System.out.println(magicalList[i].getName() + " " + magicalList[i].getCandy());
+    }
+}
+
